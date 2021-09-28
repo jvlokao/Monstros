@@ -1,0 +1,297 @@
+{
+	"siteVersion": "1.136.0",
+	"_meta": {
+		"sources": [
+			{
+				"json": "UlucaiDM",
+				"abbreviation": "ULDM",
+				"full": "Ulucai's Degenerate Mind",
+				"url": "",
+				"authors": [
+					"Ulucai"
+				],
+				"convertedBy": [
+					"Ulucai"
+				]
+			}
+		],
+		"dateAdded": 1632793545,
+		"dateLastModified": 1632793545
+	},
+	"monster": [
+		{
+			"name": "Yamata no Orochi",
+			"source": "UlucaiDM",
+			"page": 94,
+			"size": "G",
+			"type": {
+				"type": "fiend",
+				"tags": [
+					"Yokai"
+				]
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 22,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "22d20 + 110",
+				"average": 341
+			},
+			"speed": {
+				"walk": 50,
+				"swim": 50
+			},
+			"str": 27,
+			"dex": 12,
+			"con": 21,
+			"int": 18,
+			"wis": 19,
+			"cha": 17,
+			"save": {
+				"dex": "+8",
+				"wis": "+11",
+				"con": "+12"
+			},
+			"skill": {
+				"deception": "+10",
+				"insight": "+11",
+				"perception": "+18",
+				"persuasion": "+10",
+				"stealth": "+8"
+			},
+			"passive": 28,
+			"immune": [
+				"lightning",
+				"poison"
+			],
+			"conditionImmune": [
+				"frightened",
+				"petrified",
+				"poisoned",
+				"unconscious"
+			],
+			"languages": [
+				"All languages"
+			],
+			"cr": "24",
+			"trait": [
+				{
+					"name": "Amphibious",
+					"entries": [
+						"The Orochi can breathe air and water."
+					]
+				},
+				{
+					"name": "8-headead",
+					"entries": [
+						"When Orochi is subject to a condition that keeps it from using its actions one of his head is affected instead.",
+						"Additionally it is immune to the following spells: {@spell charm monster}, {@spell dominate monster}, {@spell geas}, {@spell suggestion}, {@spell modify memory}, {@spell otto's irrestible dance}"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Orochi can use its Osoroshi sonzai. It then makes use three of its attacks, it cannot use the same attack on a turn."
+					]
+				},
+				{
+					"name": "Poison Bite",
+					"entries": [
+						"{@atk mw} {@hit 14} to hit, reach 20 ft., one target. {@h}19 ({@damage 2d10 + 8}) piercing damage plus 13 ({@damage 3d8}) poison damage and the target must make a {@dc 21} Constitution saving throw, taking 45 ({@damage 10d8}) poison damage at the end of its next turn."
+					]
+				},
+				{
+					"name": "Shippo (tail)",
+					"entries": [
+						"{@atk mw} {@hit 14} to hit, reach 20 ft., one target. {@h}21 ({@damage 2d12 + 8}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Osoroshī sonzai (Presence)",
+					"entries": [
+						"Each creature of Orochi's choice that is within 120 feet of the dragon and aware of it must succeed on a {@dc 21} Wisdom saving throw or become {@condition frightened} for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the dragon's Frightful Presence for the next 24 hours."
+					]
+				},
+				{
+					"name": "Kami no inazuma",
+					"entries": [
+						"Orochi channels its wrath to call down a lightning bolt that strike at its foes. Orochi targets a creature it can see within 120 feet, the target and each creature within 5-feet of target must make a dexterity saving throw. On a failed save, a creature takes 55 ({@damage 10d10}) lightning damage and lose its reaction. On a successful one, it takes half the damage."
+					]
+				},
+				{
+					"name": "Yami no ibuki (Shadow head)",
+					"entries": [
+						"Orochi exhales shadows in a 90-foot cone. Each creature in that area must make a {@dc 21} Constitution saving throw. On a failed save, a creature takes 27 ({@damage 6d8}) psychic damage and suffers 1 level of {@condition exhaustion}. On successful one, it takes 13 ({@damage 3d8}) psychic damage."
+					]
+				},
+				{
+					"name": "Mizu Shotto  (Water head)",
+					"entries": [
+						"{@atk rw} {@hit 14} to hit, range 120/360 ft., one target. {@h} 34 ({@damage 4d12 + 8}) bludgeoning damage. If the target is {@condition prone} the attack is made with advantage."
+					]
+				},
+				{
+					"name": "Honō no ibuki (Fire head)",
+					"entries": [
+						"Orochi exhales fire in a 90-foot cone. Each creature in that area must make a {@dc 21} Dexterity saving throw, taking 35 ({@damage 10d6}) fire damage on a failed save, or half as much damage on a successful one.",
+						"Additionally the ground is heated in the area until the start of orochi's next turn. A creature that enter the area for the first time on a turn or end its turn inside the heated area takes 10 ({@damage 3d6}) fire damage."
+					]
+				}
+			],
+			"environment": [
+				"forest"
+			],
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/green-dragon.mp3"
+			},
+			"traitTags": [
+				"Amphibious"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"P",
+				"I",
+				"B",
+				"L",
+				"Y",
+				"F"
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"AOE",
+				"RW"
+			],
+			"conditionInflict": [
+				"frightened",
+				"exhaustion",
+				"prone"
+			],
+			"conditionInflictLegendary": [
+				"charmed",
+				"restrained"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"tokenUrl": "https://5e.tools/img/MM/Adult Green Dragon.png",
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://5e.tools/img/bestiary/MM/Green Dragon.jpg"
+						}
+					}
+				]
+			},
+			"shortName": "Orochi",
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					]
+				},
+				{
+					"resist": [
+						"acid",
+						"thunder"
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "Atama (2 actions)",
+					"entries": [
+						"Orochi use one of its attacks."
+					]
+				},
+				{
+					"name": "Move",
+					"entries": [
+						"Orochi move up to its speed."
+					]
+				},
+				{
+					"name": "Majutsu (Arcane Head)",
+					"entries": [
+						"Orochi casts a spell."
+					]
+				},
+				{
+					"name": "Kaze no Ibuki (Wind Head)",
+					"entries": [
+						"Orochi exhales a 90-foot cone of wind. Each creature in that area must make a {@dc 21} Strength saving, if a creature fails it is pushed 60 feets away from orochi and is knocked {@condition prone}. If a creature succeeds on the saving throw is it pushed 15 feet."
+					]
+				},
+				{
+					"name": "Āsubureiku (Earth Head)",
+					"entries": [
+						"The ground opens at Orochi's command, opening a 15-foot radius, 20-foot-deep hole in the ground. Each creature in the area can use its reaction make a {@dc 21} Dexterity saving throw to try to avoid falling inside the hole. If a creature fails, it takes 7 ({@damage 2d6}) bludgeoning damage and is knocked {@condition prone} . If a creature succeeds it moves to a unocupied space within 5 feet of the area."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Shippo",
+					"entries": [
+						"When a creature within 20 feet of Orochi moves, Orochi can make a Shippo attack against the creature."
+					]
+				}
+			],
+			"senses": [
+				"blindsight 10 ft.",
+				"darkvision 120 ft."
+			],
+			"senseTags": [
+				"B",
+				"SD"
+			],
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"will": [
+						"{@spell bane}",
+						"{@spell control weather}",
+						"{@spell dispel evil and good}",
+						"{@spell dispel magic}",
+						"{@spell faerie fire}",
+						"{@spell sleep} "
+					],
+					"daily": {
+						"1e": [
+							"{@spell divine word}",
+							"{@spell entangle}",
+							"{@spell flesh to stone}",
+							"{@spell heal}",
+							"{@spell imprisonment}",
+							"{@spell plane shift}",
+							"{@spell sickening radiance|XGE}",
+							"{@spell Tasha's hideous laughter}"
+						]
+					},
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"I"
+			]
+		}
+	]
+}
